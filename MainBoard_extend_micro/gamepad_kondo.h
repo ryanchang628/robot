@@ -9,14 +9,12 @@
 #define GAMEPAD_KONDO_BAUDRATE  115200
 #define GAMEPAD_KONDO_TIMEOUT 100
 
-
 int16_t gpKondo_init(uint8_t id);
 int16_t gpKondo_enable(uint8_t id);
 int16_t gpKondo_disable(uint8_t id);
 
-
 enum KONDO_BUTTON : unsigned short{
-  KONDO_BUTTON_NONE       = 0x0000,  //
+  KONDO_BUTTON_NONE      =  0x0000,  //
   KONDO_BUTTON_UP        =  0x0001,  //
   KONDO_BUTTON_DOWN      =  0x0002,  //   
   KONDO_BUTTON_RIGHT     =  0x0004,  //   
@@ -34,6 +32,5 @@ enum KONDO_BUTTON : unsigned short{
   
   KONDO_BUTTON_FALSE = 0xFFFF ///
 };
-
 
 #endif
